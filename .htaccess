@@ -1,0 +1,16 @@
+SetEnv PHP_VER 5_5
+SetEnv REGISTER_GLOBALS 0
+
+AddType font/woff2 .woff2
+
+#Create a cookie based on the GET parameter 'live'
+RewriteEngine on
+RewriteBase /
+RewriteCond %{SERVER_NAME} ^.*-live.*$ [NC]
+RewriteRule ^ - [CO=live:1:%{SERVER_NAME}:7200:/]
+
+RewriteEngine on
+RewriteRule ^cache/ - [L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.html [L]

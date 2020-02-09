@@ -1,0 +1,196 @@
+{
+	"$schema": "./schema_index.json",
+	
+	"site": {
+		"title": "Colors",
+		"copyright": "© 2020 - <a href=\"/\">colors</a>",
+		"url": { "server": "Colors", "extension": ""},
+		"moto": { "short": "A new way to fetch colors" }, 
+		"news": "",
+		"home": { "render": "home"  },
+		"breadcrumb": { "showLast": true } 
+	},
+	
+	"tags": [
+		{ "id": "api", "name": "api", "icon": "icon-flash", "tint": "#8888AA" },
+		{ "id": "faq", "name": "faq", "icon": "icon-android", "tint": "#8888AA" },
+		{ "id": "git", "name": "Git", "icon": "icon-git", "tint": "#8888AA" },
+		{ "id": "android", "name": "Android", "icon": "icon-android", "tint": "#b569bc" },
+		{ "id": "sport", "name": "Sport", "icon": "icon-soccer-ball", "tint": "#5ea3d9" },
+		{ "id": "windows", "name": "Windows", "icon": "icon-win8", "tint": "#2f91bc" },
+		
+		{ "id": "api-link", "name": "api-link", "icon": "icon-win8", "tint": "#2f91bc" },
+		{ "id": "support", "name": "support", "icon": "icon-heart", "tint": "#994444" },
+		{ "id": "suivi", "name": "suivi", "icon": "icon-share-1", "tint": "#994444" } ,
+		
+		
+		{ "id": "carousel", "name": "carousel", "icon": "icon-share-1", "tint": "#994444" }, 
+		{ "id": "data-quesaco", "name_en": "Transient data, what is it exactly?", "name_fr": "Données éphémères, quésaco", "icon": "icon-share-1", "tint": "#994444" },
+		{ "id": "usages", "name": "Des données à foison", "description": "Des données, il y en a partout, sans forcément le savoir. Vous pouvez les récupérer et les manipuler. Découvrez les cas d'utilisations", "icon": "icon-share-1", "tint": "#994444", "linkText": "Découvrez les cas d'utilisations" },
+		{ "id": "data-possibility", "name": "Côté technique", "icon": "icon-share-1", "tint": "#994444", "linkText": "Découvrez le coté technique" } ,
+		
+		
+		{ "id": "%news%", "name": "Nouveautés", "icon": "icon-heart", "tint": "#994444" },
+		{ "id": "%daily%", "name": "Article du jour", "icon": "icon-share-1", "tint": "#994444" },
+		
+		
+		{ "id": "avantage-particulier", "name": "Avantages particuliers", "icon": "icon-heart", "tint": "#994444" },
+		{ "id": "avantage-startup", "name": "Avantages startups", "icon": "icon-share-1", "tint": "#994444" },
+		{ "id": "avantage-student", "name": "Avantages étudiants", "icon": "icon-heart", "tint": "#994444" },
+		{ "id": "avantage-business", "name": "Avantages entreprises", "icon": "icon-share-1", "tint": "#994444" }
+		
+	],
+	
+	"mainSections": [
+		
+		{ "id": "informations", "icon": "icon-info-circled", "name": "Informations", "childSections": 
+			[
+				{ "id": "faq", "href": "/faq", "name": "FAQ", "tags": ["faq"], "mainTag": false, "footerLink": true },
+				{ "id": "mention", "name": "Mentions légales", "source": "/data/mentions.json", "type": "modal", "href": "#", "footerAbout": true },
+				{ "id": "policy", "name": "Politique de confidentialité", "source": "/data/policy.json", "type": "modal", "href": "#", "footerAbout": true },
+				{ "id": "cgu", "name": "Conditions générales d'utilisation", "source": "/data/cgu.json", "type": "modal", "href": "#", "footerAbout": true }
+			]
+		}
+	],
+	
+	"pages": [ 
+		{ "id": "home", "renders": [
+			{ "id": "charts", "source": "article", "value": "color", "displayTitle": false }
+		] },
+		{ "id": "home-legacy", "renders": [
+			{ "id": "categories", "displayTitle": false, "style": "invert-color" },
+			{ "id": "charts", "source": "tag", "value": "%news%", "displayTitle": false, "style": "bg-white" },
+			{ "id": "charts", "source": "tag", "value": "%daily%", "displayTitle": false, "style": "bg-white" },
+			
+			{ "id": "grid", "source": "tag", "value": "usages", "displayTitle": true  }
+		] },
+		{ "id": "mainSection-cards", "renders": [ { "id": "cards", "source": "tag", "value" : "%mainSection.tags%" } ] },
+		{ "id": "mainSection-links", "renders": [ { "id": "links", "source": "tag", "value" : "%mainSection.tags%" } ] },
+		{ "id": "mainSection-grid", "renders": [ { "id": "grid", "source": "tag", "value" : "%mainSection.tags%" } ] },
+		
+		{ "id": "simple-article", "renders": [ { "id": "charts", "source": "article" } ] },
+		
+		{ "id": "mainSection-api", "renders": [  
+			{ "id": "pages", "source": "tag", "value": "%mainSection.tags%", "displayTitle": false },
+			{ "id": "charts", "source": "article", "value": "color", "displayTitle": false }
+		] },
+		{ "id": "mainSection-usage", "renders": [
+			{ "id": "cards", "source": "tag", "value": "usages", "displayTitle": false, "style": "bg-white", "displayLink": false },
+			{ "id": "pages", "source": "tag", "value": "%mainSection.tags%", "displayTitle": false }
+		] },
+		{ "id": "article-usage", "renders": [ 
+			{ "id": "charts", "source": "article" },
+			{ "id": "charts", "source": "article", "value": "api-link", "displayTitle": false }
+		] },
+		{ "id": "article-particulier", "renders": [ 
+			{ "id": "charts", "source": "article" },
+			{ "id": "grid", "source": "tag", "value": "avantage-particulier", "displayTitle": true  },
+			{ "id": "charts", "source": "article", "value": "api-link", "displayTitle": false }
+		] },
+		{ "id": "article-startup", "renders": [ 
+			{ "id": "charts", "source": "article" },
+			{ "id": "grid", "source": "tag", "value": "avantage-startup", "displayTitle": true  },
+			{ "id": "charts", "source": "article", "value": "api-link", "displayTitle": false }
+		] },
+		{ "id": "article-student", "renders": [ 
+			{ "id": "charts", "source": "article" },
+			{ "id": "grid", "source": "tag", "value": "avantage-student", "displayTitle": true  },
+			{ "id": "charts", "source": "article", "value": "api-link", "displayTitle": false }
+		] },
+		{ "id": "article-business", "renders": [ 
+			{ "id": "charts", "source": "article" },
+			{ "id": "grid", "source": "tag", "value": "avantage-business", "displayTitle": true  },
+			{ "id": "charts", "source": "article", "value": "api-link", "displayTitle": false }
+		] }
+	],
+	
+	"charts": [
+		{ "type": "html", "name": "Le saviez-vous?", "icon": "icon-info-circled", "displayTitle": false, "module": "@pdulvp/chart-html" },
+		{ "type": "information", "name": "Le saviez-vous?", "icon": "icon-info-circled", "displayTitle": false, "module": "@pdulvp/chart-information" },
+		{ "type": "tip", "name": "Le saviez-vous?", "icon": "icon-info-circled",  "displayTitle": false }, 
+		{ "type": "table", "name": "Tableau", "icon": "icon-info-circled",  "displayTitle": false, "module": "@pdulvp/chart-table" },
+		{ "type": "horizontalBar", "name": "Graphique", "icon": "icon-info-circled",  "displayTitle": false, "module": "@pdulvp/chart-hbar" },
+		{ "type": "ptitle", "icon": "icon-info-circled", "displayTitle": false, "module": "@pdulvp/chart-ptitle" },
+		{ "type": "lineChart", "name": "Graphique", "icon": "icon-info-circled",  "displayTitle": false, "module": "@pdulvp/chart-line" },
+		{ "type": "cloud", "name": "Nuage", "icon": "icon-info-circled",  "displayTitle": false, "module": "@pdulvp/chart-cloud" },
+		{ "type": "france", "name": "Carte intéractive de France", "icon": "icon-info-circled",  "displayTitle": false, "module": "@pdulvp/chart-france" },
+		{ "type": "share", "name": "Partager", "icon": "icon-info-circled",  "displayTitle": false, "module": "@pdulvp/chart-share" },
+		{ "type": "source", "name": "Données sources", "icon": "icon-info-circled",  "displayTitle": false, "module": "@pdulvp/chart-source" }
+	],
+
+	"renderList": [
+		{ "id": "categories", "module": "@pdulvp/list-categories" },
+		{ "id": "carousel", "module": "@pdulvp/list-carousel" },
+		{ "id": "grid", "module": "@pdulvp/list-grid" },
+		{ "id": "cards", "module": "@pdulvp/list-cards" },
+		{ "id": "pages", "module": "@pdulvp/list-pages" },
+		{ "id": "links", "module": "@pdulvp/list-links" },
+		{ "id": "charts", "module": "@pdulvp/list-charts" }
+	],
+	
+	"functions": {
+		
+	},
+	
+	"sources": {
+		"color": { 
+			"file": { "path": "data/articles/color.html", "type": "html" }
+		}, 
+		"faq": { 
+			"file": { "path": "data/articles/faq.html", "type": "html" }
+		}
+	},
+	
+	"data": [ 
+	 
+		{ "name": "Testez directement", 
+		  "id": "color",
+		  "tags": [ "windows" ],
+		  "lastSource": "201803191511",
+		  "lastUpdated": "201803191511",
+		  "charts": [
+			{
+				"type" : "html", "icon": "icon-info-circled", "style": "invert-color-lightest",
+				"options": [ 
+					{ "id": "info", "source": "color" }
+				]
+			}
+		  ]
+		},
+
+
+		{ "name": "FAQ", 
+		  "id": "faq",
+		  "tags": [ "faq" ],
+		  "lastSource": "201803191511",
+		  "lastUpdated": "201803191511",
+		  "charts": [ 
+			{ 
+				"type" : "html", "icon": "icon-info-circled",
+				"options": [ 
+					{ "id": "info1", "source": "faq" }
+				]
+			}
+		  ]
+		},
+		
+		{ "name": "Participer à l'amélioration du site", 
+		  "id": "support",  
+		  "abstract": "Une erreur, une idée, c'est ici que ca se passe.", 
+		  "visible": false,
+		  "tags": [ "support" ],
+		  "lastSource": "201403191511",
+		  "lastUpdated": "201403191511"
+		}, 
+		
+		{ "name": "Réseautage", 
+		  "id": "suivi",  
+		  "visible": false,
+		  "tags": [ "suivi" ],
+		  "abstract": "Discutons sur les réseaux sociaux, des articles de ce site, ou d'autres choses..", 
+		  "lastSource": "201403191511",
+		  "lastUpdated": "201403191511"
+		} 
+		
+	]
+}

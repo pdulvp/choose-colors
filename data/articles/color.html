@@ -1,0 +1,33 @@
+
+<div id="okok" class="mt-3">
+
+</div>
+
+<script>
+
+
+for (j=0; j<10; j++) {
+let result = `<div id="oikok" class="d-flex flex-wrap align-items-center mb-3"><span class=" mr-3">Colors Set n°${j}</span><div class=" align-items-center  d-flex flex-wrap ">`;
+let hsl = [ (j*(1/10)+0.5)%1, 0.1, 0.8 ];
+
+
+for (i=0; i<12; i++) {
+	hsl[1]+=0.04;
+	hsl[2]+=0.005;
+	let rgb = colors.hslToRgb(hsl[0],hsl[1],hsl[2]);
+	let red = rgb[0];
+	let green = rgb[1];
+	let blue = rgb[2];
+	
+	let color = `rgb(${red}, ${green}, ${blue})`;
+	let bcolor = `rgb(${red-60}, ${green-60}, ${blue-60})`;
+	let width = 30; //-i*1;
+	let height = 30; // +i*2;
+	
+	result+=`<div class="m-1" style="width:${width}px; height:${height}px; background-color:${color}; border:2px solid ${bcolor}"></div>`;
+}
+result+=`</div></div>`;
+document.getElementById("okok").innerHTML+=result;
+}
+
+</script>

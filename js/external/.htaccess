@@ -1,0 +1,2 @@
+Header set Cache-Control "max-age=2592000"
+ExpiresDefault "access plus 2592000 seconds"

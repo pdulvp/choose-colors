@@ -1,0 +1,38 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "@pdulvp/chart-cloud": "^1.0.2",
+    "@pdulvp/chart-france": "^1.0.2",
+    "@pdulvp/chart-hbar": "^1.0.2",
+    "@pdulvp/chart-html": "^1.0.1",
+    "@pdulvp/chart-information": "^1.0.1",
+    "@pdulvp/chart-line": "^1.0.1",
+    "@pdulvp/chart-ptitle": "^1.0.1",
+    "@pdulvp/chart-share": "^1.0.1",
+    "@pdulvp/chart-source": "^1.0.2",
+    "@pdulvp/chart-table": "^1.0.1",
+    "@pdulvp/colors": "^1.0.1",
+    "@pdulvp/fsquery": "^1.0.2",
+    "@pdulvp/httpcquery": "^1.0.1",
+    "@pdulvp/httpquery": "^1.0.1",
+    "@pdulvp/index": "^1.0.1",
+    "@pdulvp/jsonop": "^1.0.1",
+    "@pdulvp/list-cards": "^1.0.1",
+    "@pdulvp/list-carousel": "^1.0.1",
+    "@pdulvp/list-categories": "^1.0.1",
+    "@pdulvp/list-charts": "^1.0.1",
+    "@pdulvp/list-grid": "^1.0.1",
+    "@pdulvp/list-links": "^1.0.1",
+    "@pdulvp/list-pages": "^1.0.1",
+    "@pdulvp/sources": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

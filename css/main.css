@@ -1,0 +1,480 @@
+div {
+	/*font-family: "Anonymous Pro";*/
+}
+.main-title {
+	font-family: 'Barlow Condensed', sans-serif;
+}
+code { 
+    color: #8116cc;
+}
+.carousel-indicators > li {
+  border-radius: 50%;
+  background-color:lightgray;
+  width:12px;
+  height:12px;
+  margin-right: 12px;
+}
+.carousel-indicators .active {
+  background-color:gray;
+}
+
+#breadcrumb {
+	border-bottom:1px solid lightgray;
+}
+.main-section {
+	border-bottom:1px solid lightgray;
+}
+.classinfo {
+	font-family: 'Amita', sans-serif;
+	font-size:24px;
+	text-align:center;
+}
+.news-done {
+	color:#CCCCCC;
+}
+.news hr {
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+	border-color:#EEEEEE;
+}
+
+svg {
+ -moz-user-select: none; 
+	width:100%;
+	height:auto;
+	max-width: 700px;
+}
+.departements svg #Regions {
+	display:none !important;
+}
+.departements svg #Paris path {
+	stroke-width:1px !important;
+}
+.departements svg #Departements path {
+	stroke-width:1px !important;
+} 
+
+.regions svg #Regions {
+	stroke-width:1px !important;
+}
+.regions svg #Paris path {
+	stroke-width:1px !important;
+}
+.regions svg #Departements path {
+	display:none !important;
+} 
+.on {
+	fill:#a1ed92 !important;
+}
+
+.navbar-staging .nav-item {
+    color: rgba(255,255,255,0.7);
+}
+.navbar-staging .nav-item .nav-link {
+    color: rgba(255,255,255,0.7);
+}
+.navbar-staging .active .nav-link {
+    color: rgba(255,255,255,1);
+}
+.navbar-staging .nav-link {
+    color: rgba(255,255,255,1);
+}
+.navbar-staging a.navbar-brand{
+    color: rgba(255,255,255,1);
+}
+.navbar-bg-danger {
+    background: repeating-linear-gradient(
+	  45deg,
+	  #c9647c,
+	  #c9647c 20px,
+	  #a74e64 20px,
+	  #a74e64 40px
+	);
+}
+
+hr.my-separator {
+	margin-top: 0rem;
+	margin-bottom: 1rem;
+}
+.navbar-bg-warning {
+    background: repeating-linear-gradient(
+	  45deg,
+	  #c97464,
+	  #c97464 20px,
+	  #a75c4e 20px,
+	  #a75c4e 40px
+	);
+}
+.invert-color-dark {
+	background-color: #425565;
+}
+.invert-color {
+	color:white;
+	background-color: #687b8c;
+}
+.invert-color hr {
+  background-color: white;
+	
+}
+.invert-color-lightest {
+	background-color: #edf5fb;
+}
+.invert-color-light {
+	background-color: #d2e1ef;
+}
+
+.font-theme {
+	color: #687b8c;
+}
+
+.invert-color a {
+	color:white;
+}
+.invert-color button:hover {
+	color:white;
+}
+.invert-color button {
+	color:white;
+}
+
+.card a {
+	color:687b8c;
+}
+
+a.main-article-link {
+	color:#687b8c;
+}
+a.main-article-link:hover {
+text-decoration: none;
+}
+a.tag-link{
+	font-weight: bold;
+}
+.icon-15x { font-size: 18px; }
+.icon-2x  { font-size: 24px; }
+.icon-3x  { font-size: 30px; }
+.icon-4x  { font-size: 36px; }
+.icon-5x  { font-size: 40px; }
+.icon-10x { font-size: 54px; }
+.icon-20x { font-size: 100px; }
+
+.article-abstract {
+	font-weight:bold;
+    font-size: 14px;
+}
+.article-description {
+    font-size: 14px;
+}
+#site-extension {
+	font-family: 'Ubuntu Mono';font-style: italic; 
+	color: darkgrey;
+}
+#site-title {
+	font-family: 'Ubuntu Mono';
+	font-weight: bold;
+}
+#site-info {
+	font-family: 'Ubuntu Mono';
+	font-weight: bold;
+}
+
+.navbar-brand {
+  padding-right: 20px;
+}
+
+.chart-table {
+  border: 1px solid #eee;
+    border-bottom: 0px;
+    border-left: 0px;
+
+}
+
+.bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: 1px;
+    border-left-color: rgb(238, 238, 238);
+    border-left-width: .25rem;
+    border-radius: .25rem;
+}
+
+.bd-callout-info {
+    border-left-color: #5bc0de;
+    border-left-width: .25rem;
+}
+
+.bd-callout-warning {
+    border-left-color: #ffd248;
+    border-left-width: .25rem;
+}
+.bd-callout-danger {
+    border-left-color: #d9534f;
+    border-left-width: .25rem;
+}
+#breadcrumb {
+    
+}
+
+.chart-wait {
+	color: #343a40;
+}
+
+.chart-table-column {
+  border-bottom:1px solid #eee;
+  border-left:1px solid #eee;
+  padding: 8px; 
+  font-size: 14px;
+}
+.chart-table-column-center {
+  text-align: center;
+}
+.chart-table-column-50 {
+  flex: 50%;
+}
+.chart-table-column-75 {
+  flex: 75%;
+}
+.chart-table-column-33 {
+  flex: 33%;
+}
+.chart-table-column-66 {
+  flex: 66%;
+}
+.chart-table-column-icon {
+  flex: 2%;
+} 
+
+.cicon-invisible {
+  color:rgba(255,255,255,0);
+} 
+.chart-table-cell {
+	white-space: nowrap;
+} 
+
+.cicon-light {
+  color:#CCCCDD;
+} 
+
+.chart-table-column-65 {
+  flex: 1 1 auto;
+}
+.chart-table-column-25 {
+  flex: 0 1 auto;
+}
+.chart-table-column-5 {
+  flex: none;
+}
+
+#breadcrumb {
+	padding-top:3px;
+}
+.chart-cloud-tag {
+    text-align:  justify;
+    text-justify: distribute;
+    -moz-text-align-last: center;
+    text-align-last: center;	
+}
+
+nav .dropdown-menu {
+	z-index: 1040;
+}
+
+.chart-france {
+	text-align:center;
+}
+
+hr.hr-flag {
+	margin:0px;
+	margin-top:53px;
+	border:0px solid gray;
+    border-bottom:1px solid gray;
+    background:
+     linear-gradient(
+       to left,
+       #ee2436 0, 
+       #ee2436 33.3%,
+       #ffffff 33.3%, 
+       #ffffff 66.6%, 
+       #001e96 66.6%, 
+       #001e96 ) no-repeat;
+    background-size:100% 4px ;
+    padding-top:4px;
+ }
+ 
+.nav-code .nav-link {
+	padding: .3rem .6rem;
+	font-size: 0.8rem;
+	font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+.main-container {
+
+	padding:20px;
+
+}
+
+
+
+/* GLOBAL STYLES
+
+-------------------------------------------------- */
+
+
+
+body {
+  padding-top: 3rem;
+  color: #5a5a5a;
+}
+
+footer a {
+	color:#E0E0E0;
+}
+
+footer {
+	font-size:0.7em; 
+	background-color: #687b8c;
+	color:#E0E0E0;
+  margin-top: 3rem;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+
+-------------------------------------------------- */
+
+
+
+/* Carousel base class */
+
+.carousel {
+
+}
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+  z-index: 10;
+  bottom: 3rem;
+}
+
+
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+}
+
+.carousel-item > img {
+
+}
+
+
+
+
+
+/* MARKETING CONTENT
+
+-------------------------------------------------- */
+
+
+
+/* Center align the text within the three columns below the carousel */
+
+.marketing .col-lg-4 {
+
+  margin-bottom: 1.5rem;
+
+  text-align: center;
+
+}
+
+.marketing h2 {
+
+  font-weight: normal;
+
+}
+
+.marketing .col-lg-4 p {
+
+  margin-right: .75rem;
+
+  margin-left: .75rem;
+
+}
+
+
+
+
+
+/* Featurettes
+
+------------------------- */
+
+
+
+.featurette-divider {
+
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+
+}
+
+
+
+/* Thin out the marketing headings */
+
+.featurette-heading {
+
+  font-weight: 300;
+
+  line-height: 1;
+
+  letter-spacing: -.05rem;
+
+}
+
+
+
+
+
+/* RESPONSIVE CSS
+
+-------------------------------------------------- */
+
+
+
+@media (min-width: 40em) {
+
+  /* Bump up size of carousel content */
+
+  .carousel-caption p {
+
+    margin-bottom: 1.25rem;
+
+    font-size: 1.25rem;
+
+    line-height: 1.4;
+
+  }
+
+
+
+  .featurette-heading {
+
+    font-size: 50px;
+
+  }
+
+}
+
+
+
+@media (min-width: 62em) {
+
+  .featurette-heading {
+
+    margin-top: 7rem;
+
+  }
+
+}

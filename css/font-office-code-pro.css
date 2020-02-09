@@ -1,0 +1,13 @@
+/* source-code-pro-regular - latin */
+@font-face {
+  font-family: 'Office Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../webfonts/office-code-pro.woff2') format('woff2'); /* Super Modern Browsers */
+}
+@font-face {
+  font-family: 'Office Code Pro';
+  font-style: bold;
+  font-weight: 500;
+  src: url('../webfonts/office-code-pro-medium.woff2') format('woff2'); /* Super Modern Browsers */
+}

@@ -1,0 +1,13 @@
+/* source-code-pro-regular - latin */
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../webfonts/anonymous-pro.woff2') format('woff2'); /* Super Modern Browsers */
+}
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: bold;
+  font-weight: 500;
+  src: url('../webfonts/anonymous-pro-bold.woff2') format('woff2'); /* Super Modern Browsers */
+}

@@ -1,0 +1,92 @@
+{
+    "$id": "root",
+    "title": "Index",
+    "type": "object",
+    "additionalProperties": false,
+
+    "properties": {
+      "site": {
+        "type": "object",
+        "$ref": "#/definitions/site"
+      }, 
+      "tags": {
+        "type": "array",
+        "items": {
+            "$ref": "#/definitions/tag"
+         }
+      }, 
+      "mainSections": {
+        "type": "array",
+        "items": {
+            "$ref": "#/definitions/section"
+         }
+      }
+    },
+
+    "definitions": {
+        "site": {
+            "type": "object",
+            "properties": {
+                "title": { "type": "string" },
+                "copyright": { "type": "string" },
+                "url": { 
+                    "type": "object", 
+                    "properties": {
+                        "server": { "type": "string" },
+                        "extension": { "type": "string" }
+                    }
+                 },
+                "moto": { 
+                    "type": "object", 
+                    "properties": {
+                        "short": { "type": "string" }
+                    }
+                },
+                "home": { 
+                   "type": "object", 
+                   "properties": {
+                       "render": { "type": "string" }
+                   }
+                },
+                "breadcrumb": {
+                    "type": "object", 
+                   "properties": {
+                       "showLast": { "type": "boolean" }
+                   }
+                },
+                "news": {
+                    "type": "string"
+                }
+            }, 
+            "additionalProperties": false
+        }, 
+
+        "tag": {
+            "type": "object",
+            "properties": {
+                "id": { "type": "string" },
+                "name": { "type": "string" },
+                "icon": { "type": "string" },
+                "tint": { "type": "string" }
+            }, 
+            "additionalProperties": false
+        },
+
+        "section": {
+            "type": "object",
+            "properties": {
+                "id": { "type": "string" },
+                "href": { "type": "string" },
+                "name": { "type": "string" },
+                "tags": { 
+                    "type": "array",
+                    "items": {
+                        "type" : "string"
+                    }
+                 },
+                "mainTag": { "type": "boolean" } 
+            }, 
+            "additionalProperties": false
+        }
+    }
+}
